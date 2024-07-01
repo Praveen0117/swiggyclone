@@ -12,7 +12,7 @@ import Error from "./src/Error";
 import RestaurantsInfo from "./src/RestaurantsInfo";
 import Grocries from "./src/Grocries";
 import { Provider } from "react-redux";
-import appStore from "./src/utils/appStore";
+import appStore from "./utils/appStore";
 
 const AppLayout = () => {
     return(

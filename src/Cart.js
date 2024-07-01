@@ -41,9 +41,9 @@ const Cart = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center w-100 items-center m-4  p-4 ">
+    <div className="flex flex-col justify-items-center w-6/12 items-center m-4  p-4 ">
       <h1 className="font-serif font-bold text-base m-5 mt-0">Cart Items</h1>
-      <div>
+    <div className="">
       {renderBillDetails()}
       <button className="p-2 mt-5 bg-black text-white rounded-lg" onClick={handleClearCart}>Clear Cart</button>
       {cartItems.length == 0 && <h1>Cart is Empty Add Items to the Cart</h1>}
@@ -68,19 +68,14 @@ const Cart = () => {
                 }
                 className="rounded-r-lg w-28 h-28 mx-24 my-4"
               />
-              <button
-                className="p-2 font-bold w-28 mx-24 bg-black text-white shadow-lg rounded-lg"
-                onClick={() => handelAddItem(item)}
-              >
-                Add ➕
-              </button>
+              
             </div>
           </div>
         ))}
       </div>
       
-      </div>
-      </div>
+        </div>
+    </div>
   );
 };
 export default Cart;
